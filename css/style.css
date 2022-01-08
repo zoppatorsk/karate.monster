@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+:root {
+  --main-bg-color: #25282c;
+  --second-bg-color: #191c20;
+  --main-color: whitesmoke;
+  --second-color: lightgreen;
+  --error: crimson;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  color: var(--main-color);
+  width: 100%;
+  background-color: var(--second-bg-color);
+  padding: 20px;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--second-color);
+}
+a:hover {
+  color: var(--main-color);
+}
+
+header {
+  /* padding-bottom: 20px;
+  padding-top: 20px; */
+  background-color: var(--second-bg-color);
+  overflow: hidden;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  background-position: center 35%;
+  /* background-position: 100% 20%; */
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+
+  background-image: linear-gradient(rgba(22, 36, 8, 0.212), rgba(5, 7, 5, 0.801)), url("../images/test.png");
+  /* background-image: url("../images/bg.jpg"); */
+
+  background-size: cover;
+  user-select: none;
+  cursor: crosshair;
+}
+header h1 {
+  margin-top: 80px;
+  perspective: 2000px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  width: 100%;
+  font-family: "roboto", sans-serif;
+  font-size: 80px;
+  line-height: 0.7;
+  font-weight: 900;
+}
+
+header h1 span {
+  display: inline-block;
+}
+
+.outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(185, 238, 147);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(3, 15, 11);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+}
+nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: var(--main-color);
+}
+nav a:hover {
+  color: var(--second-color);
+}
+
+section {
+  margin-top: 100px;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+section h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 40px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 40px; */
+}
+
+.card {
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
+  border-radius: 10px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  /* height: 400px; */
+  margin: 40px;
+  transition: all 0.2s ease-in-out;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 40px;
+}
+
+.card-content > h3 {
+  font-size: 24px;
+  /* font-weight: 400; */
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+}
+.card-content a,
+.card-content a:visited {
+  font-size: 15px;
+}
+.card-content p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  /* line-height: 1.4em; */
+}
+.card-footer {
+  font-size: 24px;
+}
+.card-footer svg {
+  margin-right: 5px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 0.75rem rgb(185, 238, 147));
+}
+
+.bullet-hole {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/hole.gif");
+  background-size: cover;
+  position: absolute;
+  pointer-events: none;
+}
+.spark {
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/spark.gif");
+  background-size: cover;
+  position: absolute;
+}
+
+/* .context-menu ul {
+  list-style: none;
+}
+.context-menu {
+  position: absolute;
+  z-index: 9999;
+}
+.context-menu-list {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(1, 38, 49, 0.671);
+
+  width: 200px;
+}
+.context-menu-list > li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.context-menu-list > li:hover {
+  background-color: thistle;
+}
+.context-menu-list > li > img {
+  object-fit: contain;
+
+  height: 20px;
+} */
+
+.fall {
+  animation: falling 0.5s ease-out forwards;
+  transform-origin: bottom center;
+}
+
+.rise {
+  animation: rising 0.5s ease-out forwards;
+  transform-origin: bottom center;
+}
+
+/* contact form stuff */
+.contact-form {
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color: var(--second-bg-color);
+  padding: 40px;
+  max-width: 420px;
+  margin-bottom: 200px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding-bottom: 1px;
+  border: none;
+  border-bottom: var(--main-color) 1px solid;
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
+  margin-top: 14px; /* Add a top margin */
+  margin-bottom: 20px;
+  resize: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+.contact-form input[type="text"]:valid,
+.contact-form input[type="email"]:valid,
+.contact-form textarea:valid {
+  border-color: var(--second-color);
+}
+
+.contact-form input[type="email"]:not(:placeholder-shown):invalid,
+.contact-form input[type="text"]:not(:placeholder-shown):invalid,
+.contact-form textarea:not(:placeholder-shown):invalid {
+  border-color: var(--error);
+}
+
+.contact-form textarea {
+  overflow: hidden;
+  height: 19px;
+}
+
+/* Style the submit button with a specific background color etc */
+.contact-form input[type="submit"] {
+  background-color: #04aa6d;
+  color: #f2f2f2;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  /* pointer-events: none; */
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form label {
+  color: var(--second-color);
+}
+
+.about-me {
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color: var(--second-bg-color);
+  padding: 40px;
+  max-width: 420px;
+  margin-bottom: 200px;
+}
+
+footer .icon-wrapper svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+footer a,
+a:visited {
+  display: flex;
+  color: var(--main-color);
+  align-items: center;
+  width: 21px;
+  height: 24px;
+}

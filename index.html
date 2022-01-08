@@ -4,7 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/93a6d81a19.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <h1>
+        <span>k</span>
+        <span>a</span>
+        <span>r</span>
+        <span>a</span>
+        <span>t</span>
+        <span>e</span>
+        <span>.</span>
+        <span class="outline">m</span>
+        <span class="outline">o</span>
+        <span class="outline">n</span>
+        <span class="outline">s</span>
+        <span class="outline">t</span>
+        <span class="outline">e</span>
+        <span class="outline">r</span>
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#projects"> Projects </a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="projects">
+        <h2>#Projects</h2>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./images/djupvik.jpg" alt="" />
+            <div class="card-content">
+              <h3>Tweet Map Live</h3>
+              <a href="">tweetmap.karate.monster</a>
+              <p>
+                Web app showing realtime tweets based on bounding box of map and optional filters Connects with socket.io to a node backend
+                that streams the Tweets. Using Mapbox-GL for map library.
+              </p>
+              <div class="card-footer"><i class="fab fa-js-square" title="javascript"></i> <i class="fab fa-react"></i></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/nplott.jpg" alt="" />
+          </div>
+          <div class="card">
+            <img src="./images/tweetmap.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="aboutme">
+        <h2>About Me</h2>
+        <div class="about-me">
+          <p>Once upon a time i was a butterfly🦋</p>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-form">
+          <form action="#">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject for message.." required />
+
+            <label for="subject">Message</label>
+            <textarea id="Message" name="Message" placeholder="Write message.." required oninput="auto_grow(this)" rows="1"></textarea>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="icon-wrapper">
+        <i class="fab fa-facebook-square" title="Nope!"></i><i class="fab fa-twitter-square" title="Yeah, right.. Twitter sux"></i>
+        <i class="fab fa-youtube-square" title="I dont make videos"></i>
+        <a href=""> <i class="fab fa-github-square" title="I dont make videos"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>

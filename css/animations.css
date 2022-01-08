@@ -1,0 +1,79 @@
+@keyframes slideInFromLeft {
+  from {
+    left: -50vw;
+  }
+
+  to {
+    left: 0vw;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    right: -220vw;
+  }
+
+  to {
+    right: 0vw;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    top: -20vh;
+  }
+  30% {
+    top: 0vh;
+  }
+  60% {
+    top: 0vh;
+    color: whitesmoke;
+  }
+  80% {
+    top: -10px;
+    color: red;
+  }
+  100% {
+    top: 0vh;
+    color: whitesmoke;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 0vh;
+    color: whitesmoke;
+  }
+  50% {
+    top: -20px;
+    color: red;
+  }
+  100% {
+    top: 0vh;
+    color: whitesmoke;
+  }
+}
+
+@keyframes falling {
+  10% {
+    transform: rotateX(0deg);
+  }
+  20% {
+    transform: rotateX(10deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes rising {
+  0% {
+    transform: rotateX(90deg);
+  }
+  20% {
+    transform: rotateX(80deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
