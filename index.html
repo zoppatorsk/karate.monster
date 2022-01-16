@@ -6,9 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/animations.css" />
 		<link rel="stylesheet" href="./css/style.css" />
-		<script src="https://kit.fontawesome.com/93a6d81a19.js" crossorigin="anonymous"></script>
-		<script src="./js/index.js" defer></script>
-		<title>Document</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- <script src="https://kit.fontawesome.com/93a6d81a19.js" crossorigin="anonymous"></script> -->
+		<script src="https://kit.fontawesome.com/18966560a6.js" crossorigin="anonymous"></script>
+		<script src="./js/main.js" defer></script>
+		<title>karate.monster</title>
 	</head>
 	<body>
 		<header id="header">
@@ -51,7 +56,7 @@
 								<p>Webpage was made to showcase some features of my ipinfo api.</p>
 								<p>Serverside rendered pages using EJS templating engine</p>
 								<p>
-									Api is seperate and not available over internet, access is inteneded to be sold on
+									Api is seperate and not available over internet, access to it will later be available on
 									<a href="https://rapidapi.com/">rapidapi.com</a>.
 								</p>
 								<p>Using PostgreSQL for storing geo/proxy data, other data is generated live.</p>
@@ -93,9 +98,7 @@
 							<a href="https://nplott.karate.monster">nplott.karate.monster</a>
 							<div class="card-text">
 								<p>Web app that plots points on a map representing people with that given name or similar.</p>
-								<p>
-									Chunck loads the results from an undocumented hitta.se api proxied through a cors-anywhere instance running on heroku.
-								</p>
+								<p>Chunck loads the results from an undocumented hitta.se api proxied through a cors-anywhere instance running on heroku.</p>
 								<p>Created with help of React, react-map-gl & deck.gl.</p>
 							</div>
 						</div>
@@ -127,8 +130,8 @@
 								<p>Frontend/backend project.</p>
 								<p>Shows messages on a map with a timline feature allowing to select start and end time for messages to show.</p>
 								<p>
-									Used as a testing plattform for making api a bit more secure wihout use of api-keys, login or similar by generate
-									signature based on a number of parameters.
+									Used as a testing plattform for making api a bit more secure wihout use of api-keys, login or similar by generate signature based on a number
+									of parameters.
 								</p>
 								<p>Using Mapbox-GL for map library.</p>
 							</div>
@@ -215,14 +218,18 @@
 			<section id="aboutme">
 				<h2>About Me</h2>
 				<div class="about-me">
-					<p>Once upon a time i was a butterfly🦋</p>
+					<p>My name is Tony and I live in Sweden.</p>
+					<p>I'm currently a student at Dalarna university where I study development of e-services</p>
+					<p>Previously I done some courses in the web development field</p>
+					<p>Sometimes I like to play around with Javascript and create webapps.</p>
+					<p>Why karate.monster? Well, it's really hard coming up with a domain name that is cheap and not too boring 😁</p>
 				</div>
 			</section>
 
 			<section id="contact">
 				<h2>Contact</h2>
 				<div class="contact-form">
-					<form action="#">
+					<form action="https://formsubmit.co/9cd0bcb7b444d5ef634764037f44736a" method="POST">
 						<label for="email">Email</label>
 						<input type="email" id="email" name="email" placeholder="Your email.." required />
 
@@ -230,7 +237,7 @@
 						<input type="text" id="subject" name="subject" placeholder="Subject for message.." required />
 
 						<label for="subject">Message</label>
-						<textarea id="Message" name="Message" placeholder="Write message.." required oninput="auto_grow(this)" rows="1"></textarea>
+						<textarea id="message" name="message" placeholder="Write message.." required oninput="auto_grow(this)" rows="1"></textarea>
 
 						<input type="submit" value="Send" />
 					</form>
@@ -239,10 +246,9 @@
 		</main>
 		<footer>
 			<div class="icon-wrapper">
-				<i class="fab fa-facebook-square" title="Sorry, private!"></i
-				><i class="fab fa-twitter-square" title="Yeah, right.. Twitter sux"></i>
+				<i class="fab fa-facebook-square" title="Sorry, private!"></i><i class="fab fa-twitter-square" title="Yeah, right.. Twitter sux"></i>
 				<i class="fab fa-youtube-square" title="I dont make videos"></i>
-				<a href=""> <i class="fab fa-github-square" title="Git some hub"></i></a>
+				<a href="https://github.com/zoppatorsk"> <i class="fab fa-github-square" title="Git some hub"></i></a>
 			</div>
 		</footer>
 	</body>
